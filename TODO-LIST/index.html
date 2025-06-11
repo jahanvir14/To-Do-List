@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Todo List</title>
+</head>
+
+<body>
+    <!--NAV BAR-->
+    <nav>
+        <div class="left">
+            <a href=""><span>TODO LIST</span></a>
+        </div>
+        <div class="right">
+            <button id="newBtn">New Task</button>
+            <div id="task-form" class="hidden">
+                <input id="task-input" placeholder="Enter new task" />
+                <select id="task-category">
+                    <option value="Work">Work</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Fitness">Fitness</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Health">Health</option>
+                    <option value="Coding">Coding</option>
+                </select>
+                <button id="add-task" onclick="addtask()">Add</button>
+            </div>
+        </div>
+    </nav>
+
+    <!--HERO SECTION-->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 style="font-size:50px";>HELLO USER</h2>
+            <p style="font-size:20px"; id="task-count">Today you have 0 tasks</p>
+        </div>
+    </section>
+
+    <!--TASK CATEGORY-->
+    <section class="gallery">
+        <div class="category" data-category="Work">
+            <h1>Work</h1>
+            <ul class="list-container">
+            </ul>
+        </div>
+        <div class="category" data-category="Personal">
+            <h1>Personal</h1>
+            <ul class="list-container">
+            </ul>
+        </div>
+        <div class="category" data-category="Fitness">
+            <h1>Fitness</h1>
+            <ul class="list-container">
+            </ul>
+        </div>
+        <div class="category" data-category="Shopping">
+            <h1>Shopping</h1>
+            <ul class="list-container">
+            </ul>
+        </div>
+        <div class="category" data-category="Health">
+            <h1>Health</h1>
+            <ul class="list-container">
+            </ul>
+        </div>
+        <div class="category" data-category="Coding">
+            <h1>Coding</h1>
+            <ul class="list-container">
+            </ul>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
